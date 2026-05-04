@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Estrutura com Grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "section aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+ 
+/* HEADER */
+header {
+    grid-area: header;
+    background-color: #40E0D0; /* turquesa clássico */
+    padding: 20px;
+}
+ 
+/* SECTION */
+section {
+    grid-area: section;
+    background-color: #48D1CC; /* medium turquoise */
+    padding: 20px;
+}
+ 
+/* ASIDE */
+aside {
+    grid-area: aside;
+    background-color: #20B2AA; /* light sea green (turquesa escuro) */
+    padding: 20px;
+}
+ 
+/* FOOTER */
+footer {
+    grid-area: footer;
+    background-color: #008B8B; /* dark cyan */
+    padding: 20px;
+}
+ 
+/* ARTICLES dentro da section */
+article {
+    background-color: #AFEEEE; /* turquesa bem claro */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
